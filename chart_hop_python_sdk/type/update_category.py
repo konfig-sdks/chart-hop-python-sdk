@@ -1,0 +1,33 @@
+# coding: utf-8
+
+"""
+    ChartHop API
+
+    REST API for ChartHop
+
+    The version of the OpenAPI document: V1.0.0
+    Contact: support@charthop.com
+    Created by: https://www.charthop.com
+"""
+
+from datetime import datetime, date
+import typing
+from enum import Enum
+from typing_extensions import TypedDict, Literal, TYPE_CHECKING
+
+from chart_hop_python_sdk.type.update_category_field_ids import UpdateCategoryFieldIds
+from chart_hop_python_sdk.type.update_category_native_fields import UpdateCategoryNativeFields
+
+class RequiredUpdateCategory(TypedDict):
+    pass
+
+class OptionalUpdateCategory(TypedDict, total=False):
+    # human-readable label of category
+    label: str
+
+    fieldIds: UpdateCategoryFieldIds
+
+    nativeFields: UpdateCategoryNativeFields
+
+class UpdateCategory(RequiredUpdateCategory, OptionalUpdateCategory):
+    pass

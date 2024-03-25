@@ -1,0 +1,11 @@
+from chart_hop_python_sdk.paths.v1_org_org_id_approval_chain_approval_chain_id_request_approval_request_id.get import ApiForget
+from chart_hop_python_sdk.paths.v1_org_org_id_approval_chain_approval_chain_id_request_approval_request_id.delete import ApiFordelete
+from chart_hop_python_sdk.paths.v1_org_org_id_approval_chain_approval_chain_id_request_approval_request_id.patch import ApiForpatch
+
+
+class V1OrgOrgIdApprovalChainApprovalChainIdRequestApprovalRequestId(
+    ApiForget,
+    ApiFordelete,
+    ApiForpatch,
+):
+    pass
